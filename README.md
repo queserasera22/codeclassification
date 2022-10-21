@@ -4,12 +4,10 @@ This repository contains the code and data for the paper "On Differences Between
 ## Environment configuration
 To reproduce our experiments, machines with GPUs and NVIDIA CUDA toolkit are required.
 
-The environment requirements are listed in the file "requirements.txt". You can create conda environment to install required dependencies:
+The environment dependencies are listed in the file "requirements.txt". You can create conda environment to install required dependencies:
 
 ```
-conda create --name codebert python=3
-conda activate codebert
-pip install -r requirements.txt
+conda create --name <env> --file requirements.txt
 ```
 
 
@@ -24,6 +22,6 @@ We use three different datasets in our code classification experiments, namely P
 The partition of datasets follows [CodeNet paper](https://arxiv.org/abs/2105.12655). For each dataset, 20\% of the data is used as a testing set, while the rest is divided in 4:1 for training and validation.
 
 
-## Run
+## Usage
 
 Waiting to update...
