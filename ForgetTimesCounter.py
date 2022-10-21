@@ -68,17 +68,17 @@ def get_distribution(path):
 args = parser.parse_args()
 a_path = "models/codebert_{}/predicts.csv".format(args.dataset)
 b_path = "models/codeberta_{}/predicts.csv".format(args.dataset)
-# c_path = "cnn_text_classfication/models/CNN_{}/predicts.csv".format(args.dataset)
+
 
 # index = range(-1, 8)
 index = [str(i) for i in range(-1, 6)]
 a = get_distribution(a_path)
 b = get_distribution(b_path)
-# c = get_distribution(c_path)
+
 
 # plt_bar(index, a, "Codeberta-{}".format(args.dataset))
 # plt_bar(index, b, "Codebert-{}".format(args.dataset))
-# plt_bar(index, c, "CNN-{}".format(args.dataset))
+
 x = np.arange(len(index))
 # 有a/b/c三种类型的数据，n设置为3
 total_width, n = 0.9, 2
@@ -94,15 +94,13 @@ fig = plt.figure(figsize=(9,4))
 # 画柱状图
 plt.bar(x, a, width=width, label="CodeBERT")
 plt.bar(x + width, b, width=width, label="CodeBERTa")
-# plt.bar(x + 2*width, c, width=width, label="CNN")
+
 
 # 功能2
 for i, j in zip(x, a):
     plt.text(i, j + 0.01, "%.2f" % j, ha="center", va="bottom", fontsize=7)
 for i, j in zip(x + width, b):
     plt.text(i, j + 0.01, "%.2f" % j, ha="center", va="bottom", fontsize=7)
-# for i, j in zip(x + 2 * width, c):
-#     plt.text(i, j + 0.01, "%.2f" % j, ha="center", va="bottom", fontsize=7)
 
 plt.xticks(x + 0.5*width, index)
 
