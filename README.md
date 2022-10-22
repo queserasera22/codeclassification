@@ -24,6 +24,7 @@ The partition of datasets follows [CodeNet paper](https://arxiv.org/abs/2105.126
 
 ### Fine-tuning
 We focus on two wildly used pre-trained code models with different sizes, [CodeBERT](https://github.com/microsoft/CodeBERT) and [CodeBERTa](https://huggingface.co/huggingface/CodeBERTa-small-v1).
+
 "main.py" is the training script of the CodeBERT/CodeBERTa pre- model. You can run  as following 
 ```
 CUDA_VISIBLE_DEVICES=0 python main.py \
@@ -54,6 +55,7 @@ We conduct additional study investigating the learning dynamics of the two model
 
 ### Centered Kernel Alignment
 We investigate the representations similarity within and across models using CKA.
+
 Run "modelCompareCKA.py"
 
 
