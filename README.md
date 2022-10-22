@@ -56,7 +56,7 @@ We conduct additional study investigating the learning dynamics of the two model
 ### Centered Kernel Alignment
 We investigate the representations similarity within and across models using CKA.
 
-Run "modelCompareCKA.py"
+Run "modelCompareCKA.py" for comparison between representations within and across models.
 
 
-Waiting to update...
+## Waiting to update...
