@@ -58,5 +58,8 @@ We investigate the representations similarity within and across models using CKA
 
 Run "modelCompareCKA.py" for comparison between representations within and across models.
 
+### Direct Probe
+We investigate the geometric properties of representations before and after fine-tuning using [DIRECTPROBE](https://github.com/utahnlp/DirectProbe).
+
 
 ## Waiting to update...
